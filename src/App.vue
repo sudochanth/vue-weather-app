@@ -32,7 +32,6 @@
                 </div>
 
                 <div class="blankCity" v-else>
-                    <!-- make prettier -->
                     <h2>Please enter a city</h2>
                 </div>
             </main>
@@ -50,7 +49,6 @@
                 api_key: process.env.VUE_APP_API_KEY,
                 api_url: process.env.VUE_APP_API_URL,
                 weather: []
-                // api_key: process.env.API_KEY
             }
         },
         methods: {
@@ -64,9 +62,6 @@
             setWeather(results) {
                 this.weather = results
             }
-        },
-        mounted() {
-            console.log(process.env.API_KEY)
         }
     }
 </script>
@@ -112,8 +107,6 @@
         border-radius: 50px;
         font-size: 1em;
         color: #313131;
-        /*font-size: 20px;*/
-        /*appearance: none;*/
         border: none;
     }
 
